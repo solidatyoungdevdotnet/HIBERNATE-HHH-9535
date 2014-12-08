@@ -1,0 +1,16 @@
+.classpath
+.settings
+**/.settings
+.project
+bin
+build
+target
+**/bin
+**/build
+*classes
+**/WEB-INF/work
+.DS_Store
+.springBeans
+.~lock.*
+.idea/
+*.iml
