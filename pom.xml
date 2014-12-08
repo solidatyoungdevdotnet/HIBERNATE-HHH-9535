@@ -16,8 +16,10 @@
 		<pmd.plugin.version>3.0.1</pmd.plugin.version>
 		
  		<version.hibernate-validator>4.2.0.FINAL</version.hibernate-validator>
- 		<version.hibernate>4.3.7.Final</version.hibernate>
-		<version.jmockit>1.13</version.jmockit>
+ 		<version.hibernate>4.2.8.Final</version.hibernate>
+<!-- 		<version.hibernate>4.3.7.Final</version.hibernate>
+ -->
+ 		<version.jmockit>1.13</version.jmockit>
 		<version.maven-surefire-plugin>2.17</version.maven-surefire-plugin>
 		<version.maven-checkstyle-plugin>2.12.1</version.maven-checkstyle-plugin>
 
@@ -389,25 +391,6 @@
 					</configuration>
 				</plugin>
 				<plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>${version.maven-checkstyle-plugin}</version>
-                    <executions>
-                        <execution>
-                            <id>checkstyle</id>
-                            <phase>validate</phase>
-                            <configuration>
-                                <configLocation>src/main/resources/msa-checkstyle/msa-checkstyle.xml</configLocation>
-                                <consoleOutput>true</consoleOutput>
-                                <failOnViolation>false</failOnViolation>
-                            </configuration>
-                            <goals>
-                                <goal>check</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-				<plugin>
 					<artifactId>maven-site-plugin</artifactId>
 					<!-- <version>${plugin.maven-site.version}</version> -->
 					<dependencies>
@@ -474,8 +457,6 @@
 											<include>**/*TestSuite.java</include>
 										</includes>
 										<excludes>
-											<exclude>com/payspan/finserv/ms/entity/*</exclude>
-
 											<exclude>
 												**/*IntegrationTest.java
 											</exclude>
