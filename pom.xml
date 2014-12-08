@@ -16,9 +16,9 @@
 		<pmd.plugin.version>3.0.1</pmd.plugin.version>
 		
  		<version.hibernate-validator>4.2.0.FINAL</version.hibernate-validator>
- 		<version.hibernate>4.2.8.Final</version.hibernate>
-<!-- 		<version.hibernate>4.3.7.Final</version.hibernate>
- -->
+ <!-- 		<version.hibernate>4.2.8.Final</version.hibernate>
+--> 		<version.hibernate>4.3.7.Final</version.hibernate>
+ 
  		<version.jmockit>1.13</version.jmockit>
 		<version.maven-surefire-plugin>2.17</version.maven-surefire-plugin>
 		<version.maven-checkstyle-plugin>2.12.1</version.maven-checkstyle-plugin>
